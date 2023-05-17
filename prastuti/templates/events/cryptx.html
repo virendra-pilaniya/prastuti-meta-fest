@@ -1,0 +1,80 @@
+{% extends 'prastuti/base.html' %}
+{% load static %}
+{% block body_block %}
+<div class="light pt-3 pt-lg-5 pb-2 text-light container-fluid"
+  style="margin-top: 76.3px; margin-bottom: -1px; background-color: #0a043c;">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="font-weight-bold mb-5 eventName">
+        CRYPTX</h1>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-7 order-2 order-md-1 details">
+        <hr class="d-none d-md-block bg-secondary">
+        <div>
+          <p class="font-weight-light mt-2 mb-0"><span class="font-weight-bold" style="color:#e5707e">Date:</span>
+            To be announced</p>
+          <p class="font-weight-light mb-0"><span class="font-weight-bold" style="color:#e5707e">Time:</span> To be announced
+          </p>
+          <p class="font-weight-light mb-3"><span class="font-weight-bold" style="color:#e5707e">Team size:</span>
+            1 - 2</p>
+        </div>
+        <hr class="d-none d-md-block bg-secondary">
+      </div>
+      <div class="col-12 col-md-5 order-1 order-md-2">
+        <img src="/static/prastuti/img/CryptX.jpg" class="event_image rounded-0">
+      </div>
+      <div class="col-12 order-3 mt-2 mt-lg-4">
+        <h2 class="font-weight-bold mb-1 mt-4" style="font-family: 'Righteous', cursive; color:#e27802">Description</h2>
+        <p class="pt-0" style="font-family: 'Monda', sans-serif; color:#cdd0cb;">In this day and age, where data is 
+          the new oil, the importance of cybersecurity is growing at pace. CryptX is an online cryptography event 
+          focused on the fundamentals, techniques and algorithms of modern cryptography used worldwide to secure data. 
+          CryptX provides you with an opportunity to gain theoretical and practical knowledge of implementation of 
+          various encryption structures and ciphers. The event would comprise of problems ranging from multiple topics 
+          in the realm of cryptography. It is a CTF style event where a string a.k.a FLAG is expected to be submitted 
+          as the challenge’s solution.<br><br>FLAG format :  cryptX{th1s_1s_a_fl4g}<br>Happy Hacking ;)
+        </p>
+        <a class="btn btn-outline-danger btn-md mt-4 px-3 rounded-0 no-btn-shadow " data-tilt target="_blank"
+          href="#">Problem Statement</a>
+      </div>
+    </div>
+    <div>
+      <h2 class="mt-5 mb-3 font-weight-bold" style="font-family: 'Righteous', cursive; color:#e27802">Workshops</h2>
+      <div class="pl-2">
+        <ol type="I">
+          <li>
+            <a href="https://drive.google.com/drive/folders/1hNHykF_d5VdVAulxz4FmN2kAqhTR4Ibc" target="_blank" class="workshop_link">
+              <h4 style="font-family: 'Russo One', sans-serif;">Basics of Python</h4>
+            </a>
+            <p style="font-family: 'Monda', sans-serif;color:#cdd0cb;">A brief introduction to Anaconda, Spyder and 
+              Jupyter. Introduction to Python (print, variables, Interpreter), Control Flow Tools (if-else, while, for, 
+              range, break), Function, Installing and importing modules and packages, File reading and writing, 
+              Basic Data Structures (Numpy array, Lists, Tuples, Dictionaries), Pandas, Matplotlib</p>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1E_4ndew3oHg5yuBPbfyWXzsQVnCW62vL" target="_blank" class="workshop_link">
+              <h4 style="font-family: 'Russo One', sans-serif;">Fundamentals of Modern Cryptography</h4>
+            </a>
+            <p style="font-family: 'Monda', sans-serif;color:#cdd0cb;">The motivation for cryptography, 
+              Network Security, Classical Encoding Schemes (ASCII, Hex, Base64), Substitution Ciphers (Caesar cipher,
+               Monoalphabetic Ciphers)</p>
+          </li>
+        </ol>
+
+      </div>
+      <div>
+        <h2 class="mt-5 mb-3 font-weight-bold" style="font-family: 'Righteous', cursive; color:#e27802">Coordinators</h2>
+        
+        <ul>
+          <li><h4><span style="font-family: 'Russo One', sans-serif;">Pradyumn Singh - <a href="tel:9559575645">9559575645</a></span></h4></li>
+          <li><h4><span style="font-family: 'Russo One', sans-serif;">Piyush Singh - <a href="tel:6370523297">6370523297</a></span></h4></li>
+          <li><h4><span style="font-family: 'Russo One', sans-serif;">Harsh Agarwal - <a href="tel:8290536846">8290536846</a></span></h4></li>
+          <li><h4><span style="font-family: 'Russo One', sans-serif;">Disha Gupta - <a href="tel:6377848376">6377848376</a></span></h4></li>
+          <li><h4><span style="font-family: 'Russo One', sans-serif;">Sagardeep Thakre - <a href="tel:7470661414">7470661414</a></span></h4></li>
+          <li><h4><span style="font-family: 'Russo One', sans-serif;">Akarsh Vatsa - <a href="tel:6205044643">6205044643</a></span></h4></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

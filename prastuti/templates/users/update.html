@@ -1,0 +1,38 @@
+{% extends 'prastuti/base.html' %}
+{% block body_block %}
+    <div id="update-container" class="content3">
+      <div class="row">
+        <div class="col col-12 col-lg-12">
+          <h1 class="display-5">Update your information</h1>
+        </div>
+        <hr>
+        <div class="col col-12 col-lg-12">
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <fieldset>
+                <div class="form-group">
+                    <div style="color: black;">{{form.name.errors}}</div>
+                <input type="text" name="name" placeholder="Enter your name" maxlength="255" required id="id_name" class="form-control form-control-sm" value="{{user.name}}">
+                </div>
+                <div class="form-group">
+                    <div style="color: black;">
+                        {{form.year.errors}}
+                    </div>
+                <input type="number" name="year" placeholder="Enter year of study" required id="id_year" class="form-control form-control-sm" value={{user.year}} min="1" max="5">
+                </div>
+                <div class="form-group">
+                    <div style="color: black;">{{form.institute.errors}}</div>
+                <input type="text" name="institute" placeholder="Enter institute name" maxlength="255" required id="id_institute" class="form-control form-control-sm" value={{user.institute}}>
+                </div>
+            </fieldset>
+            <button class="btn btn-block btn-info" type="submit" ,="" value="update" >
+                Update
+              </button>
+        </form>
+        </div>
+      </div>
+
+        </div>
+    </div>
+{% endblock %}

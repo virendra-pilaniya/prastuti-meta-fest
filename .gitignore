@@ -1,0 +1,13 @@
+#ignoring the enviornment file
+Lib
+Include
+Scripts
+staticroot/
+*.cfg
+*.key
+*.xml
+*.iml
+.idea/
+__pycache__
+.cpython-39.pyc
+
